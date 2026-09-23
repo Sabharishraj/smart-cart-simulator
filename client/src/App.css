@@ -1,0 +1,27 @@
+body { margin: 0; background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif; }
+.dashboard { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid #334155; padding-bottom: 1rem; }
+h1 { margin: 0; font-size: 1.8rem; color: #38bdf8; }
+.badge { background: #1e293b; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: #94a3b8; margin-left: 10px; }
+.status { display: flex; gap: 15px; font-size: 0.9rem; color: #64748b; align-items: center; }
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; }
+.panel { background: #1e293b; border-radius: 12px; padding: 1.5rem; border: 1px solid #334155; }
+.chart-container { margin: 1rem 0; }
+.controls h3 { margin-top: 0; color: #94a3b8; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+.btn-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px; }
+button { background: #2563eb; color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s; }
+button:hover { background: #3b82f6; transform: translateY(-1px); }
+.fraud-btn { background: #dc2626 !important; grid-column: span 2; display: flex; align-items: center; justify-content: center; gap: 6px; }
+.warn-btn { background: #ea580c !important; grid-column: span 2; }
+.log { margin-top: 15px; padding: 10px; background: #0f172a; border-radius: 6px; font-family: monospace; font-size: 0.85rem; color: #38bdf8; min-height: 20px; }
+.bill-panel { position: sticky; top: 2rem; height: fit-content; }
+.bill-panel.locked { border-color: #dc2626; box-shadow: 0 0 20px rgba(220, 38, 38, 0.2); }
+.bill-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+.alert-box { background: #7f1d1d; color: #fecaca; padding: 12px; border-radius: 8px; margin-bottom: 1rem; font-size: 0.9rem; animation: pulse 2s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+.items-list { max-height: 300px; overflow-y: auto; margin-bottom: 1rem; }
+.item-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #334155; font-size: 0.95rem; }
+.empty { text-align: center; color: #64748b; padding: 2rem 0; }
+.totals { border-top: 2px solid #334155; padding-top: 1rem; font-size: 0.9rem; color: #94a3b8; }
+.grand-total { font-size: 1.8rem; color: #38bdf8; font-weight: bold; margin-top: 10px; }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
